@@ -1,21 +1,20 @@
 /* General Reset */
-body, h1, h2, h3, p, ul, li, a {
+body, h1, h2, h3, p, ul, li, a, nav, img, video, section {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
-  /* General Body Styles */
+  /* Body Styling */
   body {
     font-family: 'Poppins', Arial, sans-serif;
-    background-color: #fefaf1; /* Soft cream background */
-    color: #333; /* Neutral text color */
+    background-color: #fefaf1; /* Soft cream */
+    color: #333;
     line-height: 1.6;
     margin: 0;
-    padding: 0;
   }
   
-  /* Header Styling */
+  /* Header */
   header {
     background-color: #ffcad4; /* Soft pink */
     color: #fff;
@@ -24,48 +23,43 @@ body, h1, h2, h3, p, ul, li, a {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 10;
   }
   
   header h1 {
     font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 5px;
   }
   
   header nav ul {
-    list-style: none;
     display: flex;
     justify-content: center;
     gap: 15px;
+    list-style: none;
     margin-top: 10px;
   }
   
   header nav ul li a {
-    color: #fff;
     text-decoration: none;
+    color: #fff;
     font-size: 1rem;
-    padding: 8px 12px;
-    background-color: #ff5d73; /* A slightly deeper pink */
+    padding: 10px 15px;
+    background-color: #ff5d73; /* Vibrant pink */
     border-radius: 8px;
-    transition: background-color 0.3s;
+    transition: 0.3s;
   }
   
   header nav ul li a:hover {
-    background-color: #ffc2d1; /* Lighter pink on hover */
+    background-color: #ffc2d1; /* Softer pink */
   }
   
-  /* Footer Styling */
+  /* Footer */
   footer {
     background-color: #ffcad4;
     color: #fff;
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  footer p {
     font-size: 0.9rem;
   }
   
@@ -73,92 +67,78 @@ body, h1, h2, h3, p, ul, li, a {
   .button {
     display: inline-block;
     padding: 10px 20px;
+    text-decoration: none;
     color: #fff;
     background-color: #ff5d73;
-    text-decoration: none;
     font-size: 1rem;
     font-weight: 600;
     border-radius: 8px;
-    transition: background-color 0.3s;
+    transition: 0.3s;
   }
   
   .button:hover {
     background-color: #ffc2d1;
   }
   
-  /* Main Content Styling */
+  /* Main Content */
   main {
-    padding: 20px;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 20px auto;
+    padding: 0 15px;
   }
   
   section {
-    margin-bottom: 40px;
-    padding: 20px;
     background-color: #fff;
+    padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
     border: 2px solid #ffcad4;
   }
   
   section h2 {
     color: #ff5d73;
     margin-bottom: 15px;
-    font-size: 1.8rem;
   }
   
-  section p, section ul {
-    margin-bottom: 15px;
+  section p {
     font-size: 1rem;
+    margin-bottom: 10px;
   }
   
-  /* Media Styling */
   img {
-    width: 100%;
-    max-width: 600px;
+    max-width: 100%;
     display: block;
     margin: 10px auto;
-    border-radius: 10px;
+    border-radius: 12px;
     border: 3px solid #ffcad4;
   }
   
   video {
-    width: 100%;
-    max-width: 600px;
+    max-width: 100%;
     display: block;
     margin: 10px auto;
-    border-radius: 10px;
+    border-radius: 12px;
     border: 3px solid #ffcad4;
-  }
-  
-  /* Navigation Styling */
-  nav ul li {
-    display: inline-block;
-  }
-  
-  nav ul li a {
-    text-transform: capitalize;
   }
   
   /* Links */
   a {
     color: #ff5d73;
     text-decoration: none;
-    font-weight: 600;
   }
   
   a:hover {
     text-decoration: underline;
   }
   
-  /* List Styling */
+  /* Lists */
   ul {
-    list-style: circle;
     padding-left: 20px;
+    list-style: circle;
   }
   
-  /* Make It Responsive */
+  /* Responsive Design */
   @media (max-width: 768px) {
     header h1 {
       font-size: 2rem;
@@ -171,7 +151,6 @@ body, h1, h2, h3, p, ul, li, a {
   
     .button {
       padding: 8px 16px;
-      font-size: 0.9rem;
     }
   
     section h2 {
