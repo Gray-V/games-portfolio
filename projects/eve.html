@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Eve - Your Name</title>
-  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -20,43 +21,63 @@
     </nav>
   </header>
   <main>
+    <!-- Overview Section -->
     <section>
       <h2>Overview</h2>
-      <p>Eve is a farming simulation game with adventure mechanics. Developed in Unity using Pro Motion NG, Procreate, and Fmod.</p>
+      <div style="display: flex; gap: 15px; align-items: center;">
+        <p style="flex: 2;">
+          <strong>Eve</strong> is a farming simulation game that merges adventure mechanics with resource management. Developed in Unity with stunning 2.5D pixel art and dynamic gameplay elements, Eve invites players to manage crops, complete quests, and explore a richly detailed world.
+        </p>
+        <img src="../assets/images/eve-screenshot-1.png" alt="Gameplay Screenshot 1" style="flex: 1; max-width: 200px;">
+      </div>
     </section>
+
+    <!-- Key Features Section -->
     <section>
       <h2>Key Features</h2>
-      <ul>
-        <li>Farming simulation with dynamic crop growth.</li>
-        <li>Adventure mechanics like quests and exploration.</li>
-        <li>Pixel art with 2.5D rendering for an immersive experience.</li>
-      </ul>
+      <div style="display: flex; flex-wrap: wrap; gap: 15px;">
+        <ul style="flex: 1;">
+          <li>Dynamic crop growth cycles influenced by weather and time.</li>
+          <li>Quests and objectives that enhance both gameplay and narrative.</li>
+          <li>Rich visual design with pixel art rendered in a 2.5D style.</li>
+          <li>Adaptive soundscapes and immersive music written and composed by me!</li>
+        </ul>
+        <img src="../assets/images/eve-screenshot-2.png" alt="Gameplay Screenshot 2" style="flex: 1; max-width: 300px;">
+      </div>
     </section>
+
+    <!-- Music Section -->
     <section>
-      <h2>Development Details</h2>
-      <p>This game was developed as part of a senior project using:</p>
-      <ul>
-        <li>Unity for game mechanics and physics.</li>
-        <li>Pro Motion NG for pixel art assets.</li>
-        <li>Fmod for adaptive audio and sound effects.</li>
-        <li>Procreate for detailed character portraits.</li>
-      </ul>
+      <h2>Listen to Eve's Music</h2>
+      <audio controls>
+        <source src="../assets/eve-main-theme.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <p><em>Music written by me!</em></p>
     </section>
+
+    <!-- Design Diagrams Section -->
     <section>
-      <h2>Media</h2>
-      <img src="../assets/images/eve-placeholder.png" alt="Eve Screenshot" style="width: 100%; max-width: 600px;">
-      <p>View gameplay:</p>
-      <video controls style="width: 100%; max-width: 600px;">
-        <source src="../assets/videos/eve-demo.mp4" type="video/mp4">
-        Your browser does not support video playback.
-      </video>
+      <h2>Design Diagrams</h2>
+      <p>Explore the detailed design diagrams used in the development of Eve:</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center;">
+        <img src="../assets/images/eve-diagram-1.png" alt="Design Diagram 1" style="max-width: 300px;">
+        <img src="../assets/images/eve-diagram-2.png" alt="Design Diagram 2" style="max-width: 300px;">
+      </div>
+      <div style="text-align: center; margin: 20px 0;">
+        <img src="../assets/images/eve-diagram-3.jpg" alt="Design Diagram 3" style="max-width: 600px; width: 100%; border: 2px solid #c8d8e4;">
+      </div>
+      <div style="text-align: center; margin: 20px 0;">
+        <img src="../assets/images/eve-diagram-4.png" alt="Design Diagram 4" style="max-width: 1000px; width: 100%; border: 2px solid #c8d8e4;">
+      </div>
     </section>
+
+    <!-- Link to Software Development Plan -->
     <section>
-      <h2>Links</h2>
-      <ul>
-        <li><a href="https://github.com/CJPhill/SeniorProject-Eve" target="_blank">GitHub Repository</a></li>
-        <li><a href="../assets/Requirements Document-2.pdf" target="_blank">Requirements Document</a></li>
-      </ul>
+      <h2>Project Documentation</h2>
+      <p>
+        Learn more about the development process by reviewing the <a href="../assets/Requirements Document-2.docx" target="_blank">Software Development Plan (SDP)</a>.
+      </p>
     </section>
   </main>
   <footer>
