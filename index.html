@@ -3,32 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Your Name</title>
-  <link rel="stylesheet" href="./assets/css/styles.css">
+  <title>Home - Grayson von Goetz</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>Your Name</h1>
+    <h1>Grayson von Goetz</h1>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="skills.html">Skills & Tools</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../projects.html">Projects</a></li>
+        <li><a href="../skills.html">Skills</a></li>
       </ul>
     </nav>
   </header>
   <main>
+    <!-- Profile Section -->
     <section>
-      <h2>Welcome to My Portfolio</h2>
-      <p>This is where I showcase my game development projects, skills, and passion for creativity.</p>
-      <a href="projects.html" class="button">View My Projects</a>
+      <h2>About Me</h2>
+      <div style="display: flex; gap: 20px; align-items: center;">
+        <img src="assets/images/profile-picture.JPG" alt="Your Profile Picture" style="border-radius: 50%; max-width: 150px;">
+        <p>
+          Hi, I'm <strong>Grayson</strong>, a passionate game designer with a focus on creating immersive gameplay experiences. I specialize in game design, development, and storytelling. My work blends technical skill and creative vision to build engaging games that captivate players.
+        </p>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section>
+      <h2>Featured Projects</h2>
+      <div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;">
+        <!-- Eve -->
+        <div style="max-width: 300px; text-align: center;">
+          <img src="assets/images/eve-screenshot-1.png" alt="Eve" class="preview-image">
+          <h3>Eve</h3>
+          <p>A farming simulation game with adventure mechanics. Explore a 2.5D pixel-art world filled with quests and dynamic gameplay.</p>
+          <a href="projects/eve.html" class="button">Learn More</a>
+        </div>
+        <!-- Sharkitect -->
+        <div style="max-width: 300px; text-align: center;">
+          <img src="assets/images/sharkitect-demo.gif" alt="Sharkitect" class="preview-image">
+          <h3>Sharkitect Game Engine</h3>
+          <p>A custom-built game engine showcasing advanced rendering and physics in OpenGL. A deep dive into game engine architecture.</p>
+          <a href="projects/sharkitect.html" class="button">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section>
+      <h2>Contact Me</h2>
+      <p>
+        <strong>Email:</strong> <a href="mailto:liamoss808@gmail.com">liamoss808@gmail.com</a><br>
+        <strong>GitHub:</strong> <a href="https://github.com/Gray-V" target="_blank">https://github.com/Gray-V</a><br>
+        <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/gray-von-goetz-und-schwanenfliess-071861275/" target="_blank">https://www.linkedin.com/in/gray-von-goetz-und-schwanenfliess-071861275/</a>
+      </p>
     </section>
   </main>
   <footer>
-    <p>© 2024 Your Name. All Rights Reserved.</p>
+    <p>© 2024 Grayson von Goetz. All Rights Reserved.</p>
   </footer>
 </body>
 </html>
