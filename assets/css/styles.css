@@ -1,14 +1,14 @@
 /* General Styling */
 body {
   font-family: 'Poppins', Arial, sans-serif;
-  background-color: #f8f9fa; /* Soft white-gray */
+  background-color: #f8f9fa; 
   color: #333;
   line-height: 1.6;
   margin: 0;
 }
 
 header {
-  background-color: #8bbcd5; /* Light blue */
+  background-color: #8bbcd5;
   color: #fff;
   padding: 20px;
   text-align: center;
