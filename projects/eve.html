@@ -1,89 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eve - Grayson von Goetz</title>
-  <link rel="stylesheet" href="../assets/css/styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eve - Grayson von Goetz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/project-styles.css">
 </head>
 <body>
-  <header>
-    <h1>Grayson von Goetz</h1>
-    <nav>
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../skills.html">Skills</a></li>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">Grayson von Goetz</a>
+                <nav class="breadcrumb">
+                    <a href="../index.html">Home</a>
+                    <span>/</span>
+                    <a href="../skills.html">Skills</a>
+                    <span>/</span>
+                    <span>Eve</span>
+                </nav>
+            </div>
+        </div>
+    </header>
 
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <!-- Project Title and Image -->
-    <section>
-      <h2>Eve</h2>
-      <img src="../assets/images/eve-screenshot-1.png" alt="Gameplay Screenshot of Eve">
-    </section>
+    <div class="container">
+        <div class="project-header">
+            <h1 class="project-title">Eve</h1>
+            <p class="project-subtitle">A farming simulation game merging adventure with resource management</p>
+        </div>
 
-    <!-- Project Overview -->
-    <section>
-      <h2>Overview</h2>
-      <p>
-        <strong>Eve</strong> is a farming simulation game that merges adventure mechanics with resource management. Developed in Unity with stunning 2.5D pixel art and dynamic gameplay elements, Eve invites players to manage crops, complete quests, and explore a richly detailed world.
-      </p>
-    </section>
+        <main>
+            <!-- Hero Image -->
+            <div class="hero-image">
+                <img src="../assets/images/eve-screenshot-1.png" alt="Gameplay Screenshot of Eve">
+            </div>
 
-    <!-- Key Features -->
-    <section>
-      <h2>Key Features</h2>
-      <ul>
-        <li>Dynamic crop growth cycles influenced by weather and time.</li>
-        <li>Quests and objectives that enhance both gameplay and narrative.</li>
-        <li>Rich visual design with pixel art rendered in a 2.5D style.</li>
-        <li>Adaptive soundscapes and immersive music written and composed by me!</li>
-      </ul>
-    </section>
+            <!-- Overview -->
+            <section class="section">
+                <h2 class="section-title">Overview</h2>
+                <div class="content-card">
+                    <p>
+                        <strong>Eve</strong> is a farming simulation game that merges adventure mechanics with resource management. Developed in Unity with stunning 2.5D pixel art and dynamic gameplay elements, Eve invites players to manage crops, complete quests, and explore a richly detailed world.
+                    </p>
+                </div>
+            </section>
 
-    <!-- Music Section -->
-    <section>
-      <h2>Listen to Eve's Music</h2>
-      <audio controls>
-        <source src="../assets/audio/eve-main-theme.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-      <p><em>Music written by me!</em></p>
-    </section>
+            <!-- Key Features -->
+            <section class="section">
+                <h2 class="section-title">Key Features</h2>
+                <div class="content-card">
+                    <ul class="features-list">
+                        <li>Dynamic crop growth cycles influenced by weather and time</li>
+                        <li>Quests and objectives that enhance both gameplay and narrative</li>
+                        <li>Rich visual design with pixel art rendered in a 2.5D style</li>
+                        <li>Adaptive soundscapes and immersive music written and composed by me!</li>
+                    </ul>
+                </div>
+            </section>
 
-    <!-- Design Diagrams -->
-    <section>
-      <h2>Design Diagrams</h2>
-      <div style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center;">
-        <img src="../assets/images/eve-diagram-1.png" alt="Design Diagram 1" style="max-width: 300px;">
-        <img src="../assets/images/eve-diagram-2.png" alt="Design Diagram 2" style="max-width: 300px;">
-      </div>
-      <div style="text-align: center; margin: 20px 0;">
-        <img src="../assets/images/eve-diagram-3.jpg" alt="Design Diagram 3" style="max-width: 600px; width: 100%; border: 2px solid #c8d8e4;">
-      </div>
-      <div style="text-align: center; margin: 20px 0;">
-        <img src="../assets/images/eve-diagram-4.png" alt="Design Diagram 4" style="max-width: 1000px; width: 100%; border: 2px solid #c8d8e4;">
-      </div>
-    </section>
+            <!-- Music Section -->
+            <section class="section">
+                <div class="music-section">
+                    <h2>Listen to Eve's Music</h2>
+                    <div class="music-player">
+                        <audio controls>
+                            <source src="../assets/audio/eve-main-theme.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <p class="music-credit">Original composition by Grayson von Goetz</p>
+                    </div>
+                </div>
+            </section>
 
-    <!-- GitHub Repository -->
-    <section>
-      <h2>GitHub Repository</h2>
-      <p>
-        Explore the project on GitHub: <a href="https://github.com/CJPhill/SeniorProject-Eve" target="_blank">View Eve on GitHub</a>.
-      </p>
-    </section>
+            <!-- Design Diagrams -->
+            <section class="section">
+                <h2 class="section-title">Design Diagrams</h2>
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="../assets/images/eve-diagram-1.png" alt="Design Diagram 1">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../assets/images/eve-diagram-2.png" alt="Design Diagram 2">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../assets/images/eve-diagram-3.jpg" alt="Design Diagram 3">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../assets/images/eve-diagram-4.png" alt="Design Diagram 4">
+                    </div>
+                </div>
+            </section>
 
-    <!-- Back to Projects -->
-    <section>
-      <a href="../index.html" class="button">Back to Projects</a>
-    </section>
-  </main>
-  <footer>
-    <p>© 2024 Your Name. All Rights Reserved.</p>
-  </footer>
+            <!-- GitHub Repository -->
+            <section class="section">
+                <h2 class="section-title">GitHub Repository</h2>
+                <div class="content-card" style="text-align: center;">
+                    <p style="margin-bottom: 2rem;">Explore the complete project source code and development process.</p>
+                    <a href="https://github.com/CJPhill/SeniorProject-Eve" target="_blank" class="project-link">View Eve on GitHub</a>
+                </div>
+            </section>
+
+            <a href="../index.html" class="back-link">Back to Projects</a>
+        </main>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Grayson von Goetz</p>
+        </div>
+    </footer>
 </body>
 </html>

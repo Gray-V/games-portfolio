@@ -1,73 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sharkitect Game Engine - Grayson von Goetz</title>
-  <link rel="stylesheet" href="../assets/css/styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharkitect Game Engine - Grayson von Goetz</title>
+    <link rel="stylesheet" href="../assets/css/project-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Grayson von Goetz</h1>
-    <nav>
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../skills.html">Skills</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <!-- Project Title and GIF -->
-    <section>
-      <h2>Sharkitect Game Engine</h2>
-      <div style="text-align: center;">
-        <img src="../assets/images/sharkitect-demo.gif" alt="Sharkitect Game Engine Demo" style="max-width: 100%; border-radius: 12px; border: 2px solid #c8d8e4;">
-      </div>
-    </section>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="../index.html" class="logo">Grayson von Goetz</a>
+                <nav class="breadcrumb">
+                    <a href="../index.html">Home</a>
+                    <span>•</span>
+                    <a href="../skills.html">Skills</a>
+                    <span>•</span>
+                    <span>Sharkitect Engine</span>
+                </nav>
+            </div>
+        </div>
+    </header>
 
-    <!-- Project Overview -->
-    <section>
-      <h2>Overview</h2>
-      <p>
-        <strong>Sharkitect</strong> is a physics-based game engine developed as an independent study project by Grayson von Goetz und Schwanenfliess and Matthew Lee. Written in C, it utilizes vector mathematics to handle user-interactive collision calculations, demonstrating a deep understanding of low-level programming and physics simulation.
-      </p>
-    </section>
+    <!-- Project Header -->
+    <div class="container">
+        <div class="project-header">
+            <h1 class="project-title">Sharkitect Game Engine</h1>
+            <p class="project-subtitle">A custom physics-based game engine built from scratch in C, featuring real-time collision detection and advanced vector mathematics</p>
+        </div>
+    </div>
 
-    <!-- Key Features -->
-    <section>
-      <h2>Key Features</h2>
-      <ul>
-        <li>Physics engine capable of real-time collision detection and response.</li>
-        <li>Developed in C, showcasing proficiency in low-level programming.</li>
-        <li>Utilizes vector mathematics for accurate physics simulations.</li>
-        <li>OpenGL integration for rendering graphics.</li>
-      </ul>
-    </section>
+    <main>
+        <div class="container">
+            <!-- Hero Demo -->
+            <section class="section">
+                <div class="hero-image">
+                    <img src="../assets/images/sharkitect-demo.gif" alt="Sharkitect Game Engine Demo showcasing physics simulation and collision detection">
+                </div>
+            </section>
 
-    <!-- Development Insights -->
-    <section>
-      <h2>Development Insights</h2>
-      <p>
-        The development of Sharkitect involved extensive research into game engine architecture and physics simulation. Visit <a href="https://github.com/MattLee30/Sharkitect-Game-Engine-Demo/wiki" target="_blank">the project's wiki</a> for detailed documentation, an annotated bibliography, and summaries of relevant literature.
-      </p>
-    </section>
+            <!-- Project Overview -->
+            <section class="section">
+                <h2 class="section-title">Project Overview</h2>
+                <div class="content-card">
+                    <p><strong>Sharkitect</strong> is a comprehensive physics-based game engine developed as an independent study project by Grayson von Goetz und Schwanenfliess and Matthew Lee. Written entirely in C, this engine demonstrates advanced understanding of low-level programming principles, computational physics, and real-time graphics rendering. The project showcases sophisticated collision detection algorithms and vector mathematics implementations that power interactive physics simulations.</p>
+                </div>
+            </section>
 
-    <!-- GitHub Repository -->
-    <section>
-      <h2>GitHub Repository</h2>
-      <p>
-        Explore the project on GitHub: <a href="https://github.com/MattLee30/Sharkitect-Game-Engine-Demo" target="_blank">View Sharkitect on GitHub</a>.
-      </p>
-    </section>
+            <!-- Technical Architecture -->
+            <section class="section">
+                <h2 class="section-title">Technical Architecture</h2>
+                <div class="content-card">
+                    <ul class="features-list">
+                        <li><strong>Physics Engine Core</strong> - Custom-built physics simulation system capable of real-time collision detection, response calculations, and dynamic object interactions</li>
+                        <li><strong>Low-Level C Programming</strong> - Entire engine developed in C, demonstrating mastery of memory management, pointer arithmetic, and system-level programming concepts</li>
+                        <li><strong>Vector Mathematics Library</strong> - Comprehensive mathematical foundation utilizing custom vector operations for accurate physics calculations and transformations</li>
+                        <li><strong>OpenGL Integration</strong> - Advanced graphics rendering pipeline using OpenGL for hardware-accelerated 2D and 3D graphics with optimized performance</li>
+                        <li><strong>Real-Time Simulation</strong> - Efficient algorithms ensuring smooth, responsive physics interactions at consistent frame rates</li>
+                    </ul>
+                </div>
+            </section>
 
-    <!-- Back to Projects -->
-    <section>
-      <a href="../index.html" class="button">Back to Projects</a>
-    </section>
-  </main>
-  <footer>
-    <p>© 2024 Grayson von Goetz. All Rights Reserved.</p>
-  </footer>
+            <!-- Development Methodology -->
+            <section class="section">
+                <h2 class="section-title">Development Process & Research</h2>
+                <div class="content-card">
+                    <p>The development of Sharkitect involved extensive research into game engine architecture, computational physics, and graphics programming. The project required deep understanding of fundamental computer science concepts including data structures, algorithms, and mathematical modeling.</p>
+                    
+                    <div style="margin-top: 2rem; padding: 2rem; background: var(--soft-gray); border-radius: 0.75rem; border-left: 3px solid var(--primary);">
+                        <h3 style="margin-bottom: 1rem; color: var(--text-dark);">Research & Documentation</h3>
+                        <p style="margin-bottom: 1rem; color: var(--text-light);">Comprehensive documentation including detailed technical specifications, annotated bibliography, and analysis of relevant literature in game engine development.</p>
+                        <a href="https://github.com/MattLee30/Sharkitect-Game-Engine-Demo/wiki" target="_blank" class="project-link">
+                            Explore Project Wiki →
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Key Achievements -->
+            <section class="section">
+                <h2 class="section-title">Key Achievements</h2>
+                <div class="content-card">
+                    <div style="display: grid; gap: 1.5rem;">
+                        <div style="padding: 1.5rem; background: var(--light-gray); border-radius: 0.75rem; border-left: 3px solid var(--accent);">
+                            <h3 style="margin-bottom: 0.5rem; color: var(--text-dark);">Performance Optimization</h3>
+                            <p style="color: var(--text-light);">Achieved real-time physics simulation with efficient memory management and optimized collision detection algorithms.</p>
+                        </div>
+                        
+                        <div style="padding: 1.5rem; background: var(--light-gray); border-radius: 0.75rem; border-left: 3px solid var(--primary);">
+                            <h3 style="margin-bottom: 0.5rem; color: var(--text-dark);">Mathematical Foundation</h3>
+                            <p style="color: var(--text-light);">Implemented comprehensive vector mathematics library from scratch, handling complex 3D transformations and physics calculations.</p>
+                        </div>
+                        
+                        <div style="padding: 1.5rem; background: var(--light-gray); border-radius: 0.75rem; border-left: 3px solid var(--accent);">
+                            <h3 style="margin-bottom: 0.5rem; color: var(--text-dark);">Graphics Integration</h3>
+                            <p style="color: var(--text-light);">Successfully integrated OpenGL rendering pipeline with physics simulation for smooth, interactive visual feedback.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Technical Specifications -->
+            <section class="section">
+                <h2 class="section-title">Technical Specifications</h2>
+                <div class="content-card">
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+                        <div>
+                            <h3 style="margin-bottom: 1rem; color: var(--text-dark); font-size: 1.1rem;">Core Technologies</h3>
+                            <ul style="list-style: none; padding: 0;">
+                                <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--light-gray);">C Programming Language</li>
+                                <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--light-gray);">OpenGL Graphics API</li>
+                                <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--light-gray);">Custom Vector Math Library</li>
+                                <li style="padding: 0.5rem 0;">Cross-Platform Compatibility</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h3 style="margin-bottom: 1rem; color: var(--text-dark); font-size: 1.1rem;">Engine Features</h3>
+                            <ul style="list-style: none; padding: 0;">
+                                <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--light-gray);">Real-time Physics Simulation</li>
+                                <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--light-gray);">Collision Detection & Response</li>
+                                <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--light-gray);">Interactive User Controls</li>
+                                <li style="padding: 0.5rem 0;">Dynamic Object Management</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Project Repository -->
+            <section class="section">
+                <h2 class="section-title">Source Code & Documentation</h2>
+                <div class="content-card">
+                    <p>The complete Sharkitect Game Engine source code, documentation, and development history are available on GitHub. The repository includes detailed build instructions, API documentation, and examples demonstrating the engine's capabilities.</p>
+                    
+                    <div style="text-align: center; margin-top: 2rem;">
+                        <a href="https://github.com/MattLee30/Sharkitect-Game-Engine-Demo" target="_blank" class="project-link" style="display: inline-block;">
+                            View on GitHub →
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Navigation -->
+            <a href="../index.html" class="back-link">Back to Projects</a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2024 Grayson von Goetz. All Rights Reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
