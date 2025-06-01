@@ -4,36 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Villains TTRPG - Grayson von Goetz</title>
-    <link rel="stylesheet" href="../assets/css/project-styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <!-- Header -->
-        <header>
-            <div class="header-content">
-                <a href="../index.html" class="logo">Portfolio</a>
-                <nav class="breadcrumb">
-                    <a href="../index.html">Home</a>
-                    <span>/</span>
-                    <a href="../skills.html">Skills</a>
-                    <span>/</span>
-                    <span>Villains TTRPG</span>
-                </nav>
-            </div>
-        </header>
+    <!-- Header will be loaded here -->
+    <div id="header-placeholder"></div>
 
-        <!-- Project Title -->
-        <div class="project-header">
+    <!-- Project Header -->
+    <section class="project-header">
+        <div class="container">
             <h1 class="project-title">Villains TTRPG</h1>
             <p class="project-subtitle">A tabletop role-playing game blending TTRPGs with card game mechanics</p>
         </div>
+    </section>
 
-        <main>
+    <main>
+        <div class="container">
             <!-- Hero Image -->
-            <div class="hero-image">
-                <img src="../assets/images/villains-preview.png" alt="Villains TTRPG Cover">
-            </div>
+            <section class="section">
+                <div class="hero-image">
+                    <img src="../assets/images/villains-preview.png" alt="Villains TTRPG Cover">
+                </div>
+            </section>
 
             <!-- Project Overview -->
             <section class="section">
@@ -101,12 +94,25 @@
                 </div>
             </section>
 
-            <!-- Back to Projects -->
+            <!-- Navigation -->
             <a href="../index.html" class="back-link">Back to Projects</a>
-        </main>
+        </div>
+    </main>
 
-        <footer>
-        </footer>
-    </div>
+    <footer>
+        <div class="container">
+        </div>
+    </footer>
+
+    <script>
+        // Load header
+        fetch('../components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+                document.getElementById('current-page').textContent = 'Villains TTRPG';
+            })
+            .catch(error => console.log('Header loading failed:', error));
+    </script>
 </body>
 </html>

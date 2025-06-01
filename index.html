@@ -5,31 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grayson von Goetz - Game Designer & Developer</title>
     <meta name="description" content="Game Designer & Developer creating immersive gameplay experiences through technical skill and creative vision.">
-    <link rel="stylesheet" href="assets/css/project-styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="header-content">
-            <a href="./index.html" class="logo">Grayson von Goetz</a>
-            <nav class="breadcrumb">
-                <a href="./index.html">Home</a>
-                <span>•</span>
-                <a href="./skills.html">Skills</a>
-                <span>•</span>
-                <a href="#contact">Contact</a>
-            </nav>
-        </div>
-    </header>
+    <!-- Header will be loaded here -->
+    <div id="header-placeholder"></div>
 
-    <!-- Hero Section -->
-    <section class="project-header">
-        <div class="container">
-            <h1 class="project-title">Game Designer & Developer</h1>
-            <p class="project-subtitle">Creating immersive gameplay experiences through technical skill and creative vision</p>
-        </div>
-    </section>
 
     <main>
         <div class="container">
@@ -124,13 +106,13 @@
 
                     <!-- GLHF -->
                     <article class="homepage-project-card">
-                        <img src="assets/images/3d-library-preview.png" alt="GLHF" class="project-image">
-                        <h3 class="project-title">GLHF</h3>
-                        <p class="project-description">An interactive 3D library experience built with React and Three.js. Users can explore a virtual library space with realistic lighting, physics, and book interactions, all optimized for web deployment.</p>
+                        <img src="assets/images/glhf-preview.png" alt="GLHF Language Analyzer" class="project-image">
+                        <h3 class="project-title">GLHF Language Analyzer</h3>
+                        <p class="project-description">A static semantic analyzer for a custom scripting language with complete test coverage and expressive error messaging. Demonstrates compiler design and language processing expertise.</p>
                         <div class="project-tags">
-                            <span class="project-tag">React</span>
-                            <span class="project-tag">Three.js</span>
-                            <span class="project-tag">Web Development</span>
+                            <span class="project-tag">Compiler Design</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">Language Processing</span>
                         </div>
                         <a href="projects/glhf.html" class="project-link">View Project</a>
                     </article>
@@ -193,6 +175,18 @@
         <div class="container">
         </div>
     </footer>
+
+    <script>
+        // Load header
+        fetch('components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+                // For homepage, we don't need to change the current page text
+                document.getElementById('current-page').textContent = 'Home';
+            })
+            .catch(error => console.log('Header loading failed:', error));
+    </script>
 
     <style>
         /* Additional styles for new elements */
